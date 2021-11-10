@@ -1,11 +1,7 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
-/*
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2014,6 +2010,7 @@ input, select, textarea {
 				.row > .col-9-xsmall {
 					width: 75%;
 				}
+				
 
 				.row > .off-9-xsmall {
 					margin-left: 75%;
@@ -2149,74 +2146,82 @@ input, select, textarea {
 
 /* Section/Article */
 
-	section.special, article.special {
-		text-align: center;
+section.special, article.special {
+	text-align: center;
+}
+
+header p {
+	color: #ffffff;
+	position: relative;
+	margin: 0 0 1.5em 0;
+}
+
+header h2 + p {
+	font-size: 1.25em;
+	margin-top: -1em;
+	line-height: 1.75em;
+}
+
+h1 {
+	font-size: 60px;
+	background-color: #e44c65;
+	font-family: arial;
+	border-radius: 30px;
+	padding: 8px 10px;
+}
+header h3 + p {
+	font-size: 1.1em;
+	margin-top: -0.8em;
+	line-height: 1.75em;
+}
+
+header h4 + p,
+header h5 + p,
+header h6 + p {
+	font-size: 0.9em;
+	margin-top: -0.6em;
+	line-height: 1.5em;
+}
+
+header.major {
+	margin: 0 0 4em 0;
+	position: relative;
+	text-align: center;
+}
+
+	header.major:after {
+		background: #e44c65;
+		content: '';
+		display: inline-block;
+		height: 0.2em;
+		max-width: 20em;
+		width: 75%;
 	}
 
-	header p {
-		color: #ffffff;
-		position: relative;
-		margin: 0 0 1.5em 0;
-	}
-
-	header h2 + p {
-		font-size: 1.25em;
-		margin-top: -1em;
-		line-height: 1.75em;
-	}
-
-	header h3 + p {
-		font-size: 1.1em;
-		margin-top: -0.8em;
-		line-height: 1.75em;
-	}
-
-	header h4 + p,
-	header h5 + p,
-	header h6 + p {
-		font-size: 0.9em;
-		margin-top: -0.6em;
-		line-height: 1.5em;
-	}
-
-	header.major {
-		margin: 0 0 4em 0;
-		position: relative;
-		text-align: center;
-	}
-
-		header.major:after {
-			background: #e44c65;
-			content: '';
-			display: inline-block;
-			height: 0.2em;
-			max-width: 20em;
-			width: 75%;
-		}
-
-	footer.major {
-		margin: 4em 0 0 0;
-	}
+footer.major {
+	margin: 4em 0 0 0;
+}
 
 /* Form */
 
-	form {
-		margin: 0 0 2em 0;
+form {
+	margin: 0 0 2em 0;
+}
+
+	form.cta {
+		max-width: 35em;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-		form.cta {
-			max-width: 35em;
-			margin-left: auto;
-			margin-right: auto;
-		}
+label {
+	color: #ffffff;
+	display: block;
+	font-size: 0.9em;
+	font-weight: 300;
+	margin: 0 0 1em 0;
+}
 
-	label {
-		color: #ffffff;
-		display: block;
-		font-size: 0.9em;
-		font-weight: 300;
-		margin: 0 0 1em 0;
-	}
 
 	input[type="text"],
 	input[type="password"],
@@ -2961,7 +2966,7 @@ input, select, textarea {
 			position: absolute;
 			top: 50%;
 			width: 2em;
-			z-index: 1;
+			
 		}
 
 /* Spotlight */
@@ -3449,18 +3454,17 @@ input, select, textarea {
 
 /* Banner */
 
-	#banner {
-		background-attachment: fixed;
-		background-color: #272833;
-		background-image: url("../../images/banner.jpg");
-		background-position: center center;
-		background-size: cover;
-		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-		min-height: 100vh;
-		position: relative;
-		text-align: center;
-		z-index: 21;
-	}
+		#banner {
+			background-attachment: fixed;
+			background-image: url('images/ie/posto4.jpg');
+			background-position: center center;
+			background-size: cover;
+			background-position: top;
+			background-size: cover;
+			min-height: 100vh;
+			position: relative;
+			text-align: center;
+		}
 
 		#banner:before {
 			content: '';
@@ -3471,28 +3475,23 @@ input, select, textarea {
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
+	        width: 1%;
 		}
 
 		#banner .content {
 			display: inline-block;
 			margin-right: 1%;
-			max-width: 95%;
+			
 			padding: 6em;
 			position: relative;
 			text-align: right;
 			vertical-align: middle;
-			z-index: 1;
+			margin-bottom: 100px;
 		}
 
 			#banner .content header {
